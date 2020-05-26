@@ -115,7 +115,8 @@ void ASFormatter::staticInit()
     headers.push_back(&AS_ENDTASK      );
     headers.push_back(&AS_ENDPRIMITIVE );
     //headers.push_back(&AS_ENDMODULE    );
-	headers.push_back(&AS_ENDGENERATE  );
+    headers.push_back(&AS_ENDGENERATE  );
+    headers.push_back(&AS_ENDINTERFACE  );
     headers.push_back(&AS_ENDFUNCTION  );
 
     nonParenHeaders.push_back(&AS_INITIAL);
@@ -126,7 +127,8 @@ void ASFormatter::staticInit()
     nonParenHeaders.push_back(&AS_ENDTASK      );
     nonParenHeaders.push_back(&AS_ENDPRIMITIVE );
     //nonParenHeaders.push_back(&AS_ENDMODULE    );
-	nonParenHeaders.push_back(&AS_ENDGENERATE  );
+    nonParenHeaders.push_back(&AS_ENDGENERATE  );
+    nonParenHeaders.push_back(&AS_ENDINTERFACE );
     nonParenHeaders.push_back(&AS_ENDFUNCTION  );
 
     //add by renqh

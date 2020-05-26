@@ -142,6 +142,7 @@ const string ASResource::AS_CASE         = string("case"     );
 const string ASResource::AS_CASEX        = string("casex"    );
 const string ASResource::AS_CASEZ        = string("casez"    );
 const string ASResource::AS_GENERATE     = string("generate" );
+const string ASResource::AS_INTERFACE    = string("interface");
 const string ASResource::AS_FUNCTION     = string("function" );
 const string ASResource::AS_FORK         = string("fork"     );
 const string ASResource::AS_TABLE        = string("table"    );
@@ -153,6 +154,7 @@ const string ASResource::AS_BEGIN        = string("begin"    );
 
 const string ASResource::AS_ENDCASE      = string("endcase"       );
 const string ASResource::AS_ENDGENERATE  = string("endgenerate"   );
+const string ASResource::AS_ENDINTERFACE = string("endinterface"  );
 const string ASResource::AS_ENDFUNCTION  = string("endfunction"   );
 const string ASResource::AS_JOIN         = string("join"          );
 const string ASResource::AS_ENDTASK      = string("endtask"       );

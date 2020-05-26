@@ -89,7 +89,8 @@ void ASBeautifier::initStatic()
     verilogBlockBegin.push_back(&AS_CASE      );
     verilogBlockBegin.push_back(&AS_CASEX     );
     verilogBlockBegin.push_back(&AS_CASEZ     );
-	verilogBlockBegin.push_back(&AS_GENERATE  );
+    verilogBlockBegin.push_back(&AS_GENERATE  );
+    verilogBlockBegin.push_back(&AS_INTERFACE );
     verilogBlockBegin.push_back(&AS_FUNCTION  );
     verilogBlockBegin.push_back(&AS_FORK      );
     verilogBlockBegin.push_back(&AS_TABLE     );
@@ -100,7 +101,8 @@ void ASBeautifier::initStatic()
     verilogBlockBegin.push_back(&AS_BEGIN     );
 
     verilogBlockEnd.push_back(&AS_ENDCASE      );
-	verilogBlockEnd.push_back(&AS_ENDGENERATE  );
+    verilogBlockEnd.push_back(&AS_ENDGENERATE  );
+    verilogBlockEnd.push_back(&AS_ENDINTERFACE );
     verilogBlockEnd.push_back(&AS_ENDFUNCTION  );
     verilogBlockEnd.push_back(&AS_JOIN         );
     verilogBlockEnd.push_back(&AS_ENDTASK      );
@@ -780,7 +782,7 @@ string ASBeautifier::beautify(const string &originalLine)
         else {
               vBlockEnd   = findHeader(line, i, verilogBlockEnd);
               vBlockBegin = findHeader(line, i, verilogBlockBegin);
-		}
+        }
 
         if(vBlockEnd != NULL)
         {
